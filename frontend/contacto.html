@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Madearte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+        @media (max-width: 768px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        .form-group {
+            margin-bottom: 32px;
+        }
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--on-surface-variant);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .form-input {
+            width: 100%;
+            padding: 12px 0;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--outline-variant);
+            font-family: var(--font-body);
+            font-size: 18px;
+            color: var(--on-surface);
+            transition: border-color 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-bottom: 2px solid var(--primary);
+        }
+        textarea.form-input {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .contact-info {
+            background-color: var(--surface-container-low);
+            padding: 48px;
+            border-radius: var(--radius-lg);
+        }
+        .info-block {
+            margin-bottom: 32px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Madearte</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="arte.html">Arte</a>
+                <a href="espacios.html">Espacios</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="hero" style="margin-bottom: 64px;">
+            <h1 class="headline-xl">Inicia la conversación</h1>
+            <p class="body-lg text-variant">¿Interesado en una pieza de nuestro Atelier o en comisionar un trabajo personalizado? Escríbenos y nuestro equipo curatorial te contactará.</p>
+        </header>
+
+        <section class="contact-layout card">
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-input" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-input" placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Propósito (Opcional)</label>
+                        <input type="text" class="form-input" placeholder="Ej. Colección de Historias, Trabajo Personalizado">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-input" placeholder="Cuéntanos más sobre tu interés..."></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" style="padding: 16px 32px; font-size: 16px;">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3 class="headline-md" style="margin-bottom: 32px;">Visita el Taller</h3>
+                
+                <div class="info-block">
+                    <div class="form-label">Dirección</div>
+                    <p class="body-lg">Calle de los Artesanos, 123<br>Distrito Creativo, Ciudad de la Luz<br>CP 10001</p>
+                </div>
+                
+                <div class="info-block">
+                    <div class="form-label">Horarios (Cita Previa)</div>
+                    <p class="body-lg">Lunes a Viernes: 10:00 AM - 4:00 PM</p>
+                </div>
+
+                <div class="info-block">
+                    <div class="form-label">Contacto Directo</div>
+                    <p class="body-lg">atelier@madearte.com<br>+1 (555) 123-4567</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="brand-name">Artesano Luminoso</div>
+                <p>© 2026 Artesano Luminoso. Hecho a mano con intención.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crónica de una Obra | Madearte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .article-image {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            margin: 48px 0;
+            box-shadow: var(--shadow-ambient);
+        }
+        .article-text {
+            font-size: 20px;
+            color: var(--on-surface-variant);
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+        .article-quote {
+            font-family: var(--font-headline);
+            font-size: 32px;
+            font-style: italic;
+            color: var(--primary);
+            border-left: 2px solid var(--primary-container);
+            padding-left: 32px;
+            margin: 64px 0;
+        }
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            background-color: var(--surface-container-low);
+            padding: 48px;
+            border-radius: var(--radius-lg);
+            margin-top: 64px;
+        }
+        .spec-item .label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--on-surface-variant);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+        .spec-item .value {
+            font-family: var(--font-headline);
+            font-size: 24px;
+            color: var(--on-surface);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Madearte</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="arte.html">Arte</a>
+                <a href="espacios.html">Espacios</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <article class="article-content card">
+            <span class="chip">Estudio de Obra</span>
+            <h1 class="headline-xl" style="margin-top: 16px;">Crónica de "Susurro del Amanecer"</h1>
+            
+            <img src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&q=80&w=1200" alt="Detalle del proceso" class="article-image">
+
+            <p class="article-text">
+                El diseño de "Whisper of Dawn" comenzó no en un papel, sino tocando la madera. Una pieza de Fresno claro que encontramos en el aserradero, con una veta tan inusual que dictó la forma final de los descansabrazos.
+            </p>
+
+            <blockquote class="article-quote">
+                "La madera no se moldea, se escucha. Solo guiamos la forma que ya existe en su interior."
+            </blockquote>
+
+            <p class="article-text">
+                Tardamos más de tres semanas en lijar la estructura base utilizando técnicas tradicionales japonesas de acabado. En lugar de barnices pesados, aplicamos una cera natural que penetra el poro y permite que la silla respire, envejeciendo con dignidad a medida que interactúa con la luz y las manos.
+            </p>
+
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <div class="label">Material Base</div>
+                    <div class="value">Fresno Blanco</div>
+                </div>
+                <div class="spec-item">
+                    <div class="label">Acabado</div>
+                    <div class="value">Cera de abeja y aceite de linaza</div>
+                </div>
+                <div class="spec-item">
+                    <div class="label">Tiempo de Fabricación</div>
+                    <div class="value">120 horas manuales</div>
+                </div>
+                <div class="spec-item">
+                    <div class="label">Disponibilidad</div>
+                    <div class="value">Edición Limitada (1 de 5)</div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="brand-name">Artesano Luminoso</div>
+                <p>© 2026 Artesano Luminoso. Hecho a mano con intención.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
